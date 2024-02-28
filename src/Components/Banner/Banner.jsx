@@ -21,10 +21,10 @@ const Banner = () => {
     }
     return (
         <section className="relative">
-            <div className="h-[500px] flex justify-center items-center">
+            <div className="h-[700px] flex justify-center items-center">
                 <motion.img src={image} initial={{ width: "35%" }} animate={{ width: "100%", height: "100%", filter: { brightness: "80%" } }} transition={{ delay: 4.8, duration: 2, ease: "anticipate" }} className="object-cover object-center brightness-75"></motion.img>
             </div>
-            <div className="absolute overflow-hidden flex flex-wrap justify-around top-1/4">
+            <div className="absolute overflow-hidden w-full flex flex-wrap justify-around top-1/4">
 
                 <motion.div variants={divNo1} initial="initial" animate="animate" transition={{delay:5.5, duration:2.5, ease:"backOut"}} className="w-1/2 my-auto text-white  space-y-2">
                     <h1 className="text-5xl font-extrabold">Welcome To Our Website</h1>
