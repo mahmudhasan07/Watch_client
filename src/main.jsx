@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Index from './Index.jsx'
+import Banner from './Components/Banner/Banner.jsx'
 
 
 const router = createBrowserRouter([
@@ -12,7 +13,8 @@ const router = createBrowserRouter([
     element: <Index></Index>,
     children: [
       {
-        path: "/"
+        path: "/",
+        element : <Banner></Banner>
       }
     ]
   }

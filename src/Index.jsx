@@ -18,7 +18,7 @@ const Index = () => {
                 <AnimatePresence>
                     {
                         loading == true ?
-                            <motion.div onAnimationComplete={() => setLoading(false)} className="relative p-2 h-96">
+                            <motion.div onAnimationComplete={() => setLoading(false)} className="relative p-2 lg:h-96 h-28">
                                 <motion.img initial={{ width: "30%", y: "400%", opacity: 0 }} animate={{ width: "30%", y: 0, height: "70%", x: "50%", opacity: 1 }} transition={{ delay: 1, duration: 2, ease: "backOut" }} exit={{ opacity: 0 }} src={image1} className="absolute object-cover" ></motion.img>
                                 <motion.img initial={{ width: "30%", y: "400%", opacity: 0 }} animate={{ width: "30%", y: "120%", x: "50%", opacity: 1 }} transition={{ delay: 2, duration: 2, ease: "backOut" }} exit={{ opacity: 0 }} src={image2} className="absolute object-cover" ></motion.img>
                                 <motion.img initial={{ width: "30%", y: "400%", opacity: 0 }} animate={{ width: "30%", y: 0, x: "200%", opacity: 1 }} transition={{ delay: 1.5, duration: 2, ease: "backOut" }} exit={{ opacity: 0 }} src={image3} className="absolute object-cover" ></motion.img>
