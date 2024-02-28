@@ -13,7 +13,7 @@ import "./Index2.css"
 
 const Index = () => {
     // const [loading, setLoading] = useState(true)
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(false)
     return (
         <section className="">
             <div>
@@ -52,7 +52,7 @@ const Index = () => {
             <div  className="bg-black pb-2">
                 {
                     loading == false ?
-                        <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:4.5}}>
+                        <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:.5}}>
                             <App></App>
                         </motion.div>
                         :

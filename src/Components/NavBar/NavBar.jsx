@@ -17,19 +17,18 @@ const NavBar = () => {
 
     return (
         <section className='flex flex-wrap justify-around'>
-            <motion.div initial={{x:"700%", opacity :0}} animate={{x:0, opacity:1}} transition={{delay:5.5, duration : 3, ease :"backOut"}}>
+            <div>
                 <img src={logo} className='w-40 h-24' alt="" />
-            </motion.div>
-            <div className=' my-auto p-2'>
-                <motion.ul initial={{opacity:0}} animate={{opacity:1}} transition={{delay:5.5, duration : 3}} className='text-[#515839] text-xl font-extrabold flex flex-wrap gap-10'>
-                    <motion.li variants={animation} initial="initial" animate="animate" transition={{ delay: 6, duration: 1.5, ease: "backOut" }}>Home</motion.li>
-                    <motion.li variants={animation} initial="initial" animate="animate" transition={{ delay: 6.4, duration: 1.5, ease: "backOut" }}>Watches</motion.li>
-                    <motion.li variants={animation} initial="initial" animate="animate" transition={{ delay: 6.8, duration: 1.5, ease: "backOut" }}>Services</motion.li>
-                    <motion.li variants={animation} initial="initial" animate="animate" transition={{ delay: 7.2, duration: 1.5, ease: "backOut" }}>About Us</motion.li>
-
-                </motion.ul>
             </div>
-            <div></div>
+            <div className='my-auto p-2'>
+                <ul className='text-[#515839] text-xl font-extrabold flex flex-wrap gap-10'>
+                    <motion.li variants={animation} initial="initial" animate="animate" transition={{ delay: 5, duration: 1.5, ease: "backOut" }}>Home</motion.li>
+                    <motion.li variants={animation} initial="initial" animate="animate" transition={{ delay: 6.6, duration: 1.5, ease: "backOut" }}>Watches</motion.li>
+                    <motion.li variants={animation} initial="initial" animate="animate" transition={{ delay: 8.1, duration: 1.5, ease: "backOut" }}>Services</motion.li>
+                    <motion.li variants={animation} initial="initial" animate="animate" transition={{ delay: 9.6, duration: 1.5, ease: "backOut" }}>About Us</motion.li>
+
+                </ul>
+            </div>
         </section>
     );
 };

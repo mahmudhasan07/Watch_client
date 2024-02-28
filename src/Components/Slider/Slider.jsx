@@ -1,30 +1,36 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Mousewheel } from 'swiper/modules';
+import { Pagination, Mousewheel } from 'swiper/modules';
 
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-import "swiper/css/mousewheel"
+// import "swiper/css/mousewheel"
 
 const Slider = () => {
     return (
-        <section>
+        <section className='border-2 h-96'>
             <Swiper
-        direction={'vertical'}
-        slidesPerView={1}
-        spaceBetween={30}
-        mousewheel={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Mousewheel, Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-            <img src="https://i.ibb.co/c1p1SWB/swiper2.jpg" alt="" />
-        </SwiperSlide>
-      </Swiper>
+                direction={'vertical'}
+                slidesPerView={1}
+                spaceBetween={30}
+                // mousewheel={true}
+                pagination={{
+                    clickable: true,
+                }}
+                modules={[Pagination]}
+                className="mySwiper"
+            >
+                <SwiperSlide>Slide 1</SwiperSlide>
+                <SwiperSlide>Slide 2</SwiperSlide>
+                <SwiperSlide>Slide 3</SwiperSlide>
+                <SwiperSlide>Slide 4</SwiperSlide>
+                <SwiperSlide>Slide 5</SwiperSlide>
+                <SwiperSlide>Slide 6</SwiperSlide>
+                <SwiperSlide>Slide 7</SwiperSlide>
+                <SwiperSlide>Slide 8</SwiperSlide>
+                <SwiperSlide>Slide 9</SwiperSlide>
+            </Swiper>
         </section>
     );
 };
