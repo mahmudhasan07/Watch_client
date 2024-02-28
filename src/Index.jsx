@@ -11,12 +11,12 @@ import App from "./App";
 
 
 const Index = () => {
-    // const [loading, setLoading] = useState(true)
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
+    // const [loading, setLoading] = useState(false)
     return (
         <section>
             <div>
-                <AnimatePresence>
+                <AnimatePresence key={loading}>
                     {
                         loading == true ?
                             <motion.div onAnimationComplete={() => setLoading(false)} className="relative p-2 lg:h-96 h-28">
