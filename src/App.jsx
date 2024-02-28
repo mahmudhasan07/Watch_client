@@ -9,7 +9,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <section className='bg-black h-screen'>
+    <section className=''>
       <div>
         <NavBar></NavBar>
       </div>

@@ -36,7 +36,9 @@ const Banner = () => {
                 </motion.div>
 
             </div>
+            
         </section>
+
     );
 };
 

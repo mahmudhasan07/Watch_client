@@ -5,6 +5,8 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Index from './Index.jsx'
 import Banner from './Components/Banner/Banner.jsx'
+import FAQ from './Components/FAQ/FAQ.jsx'
+import HomePart from './Components/Home/HomePart.jsx'
 
 
 const router = createBrowserRouter([
@@ -14,7 +16,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element : <Banner></Banner>
+        element : <HomePart></HomePart>
       }
     ]
   }

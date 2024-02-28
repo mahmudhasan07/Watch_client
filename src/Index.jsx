@@ -8,18 +8,20 @@ import image3 from "../public/watch3.png";
 import image4 from "../public/watch4.png";
 import image5 from "../public/watch_banner.png";
 import App from "./App";
+import "./Index2.css"
 
 
 const Index = () => {
+    // const [loading, setLoading] = useState(true)
     const [loading, setLoading] = useState(true)
-    // const [loading, setLoading] = useState(false)
     return (
-        <section>
+        <section className="
+        ">
             <div>
-                <AnimatePresence key={loading}>
+                <AnimatePresence>
                     {
                         loading == true ?
-                            <motion.div onAnimationComplete={() => setLoading(false)} className="relative p-2 lg:h-96 h-28">
+                            <motion.div onAnimationComplete={() => setLoading(false)} className="relative p-2 lg:h-screen h-full">
                                 <motion.img initial={{ width: "30%", y: "400%", opacity: 0 }} animate={{ width: "30%", y: 0, height: "70%", x: "50%", opacity: 1 }} transition={{ delay: 1, duration: 2, ease: "backOut" }} exit={{ opacity: 0 }} src={image1} className="absolute object-cover" ></motion.img>
                                 <motion.img initial={{ width: "30%", y: "400%", opacity: 0 }} animate={{ width: "30%", y: "120%", x: "50%", opacity: 1 }} transition={{ delay: 2, duration: 2, ease: "backOut" }} exit={{ opacity: 0 }} src={image2} className="absolute object-cover" ></motion.img>
                                 <motion.img initial={{ width: "30%", y: "400%", opacity: 0 }} animate={{ width: "30%", y: 0, x: "200%", opacity: 1 }} transition={{ delay: 1.5, duration: 2, ease: "backOut" }} exit={{ opacity: 0 }} src={image3} className="absolute object-cover" ></motion.img>
@@ -33,7 +35,7 @@ const Index = () => {
                 </AnimatePresence>
 
             </div>
-            <div>
+            <div id="Homepage" className="bg-black py-2">
                 {
                     loading == false ?
                         <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:.5}}>
