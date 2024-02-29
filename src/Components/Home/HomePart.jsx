@@ -12,8 +12,14 @@ const HomePart = () => {
             <div>
                 <FAQ></FAQ>
             </div>
-            <div className="96">
+            <div className="">
                 <Slider></Slider>
+            </div>
+            <div>
+                <h1 className="text-4xl font-semibold">Hello Text world</h1>
+                <h1 className="text-4xl font-semibold">Hello Text world</h1>
+                <h1 className="text-4xl font-semibold">Hello Text world</h1>
+                <h1 className="text-4xl font-semibold">Hello Text world</h1>
             </div>
         </section>
     );
