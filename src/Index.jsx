@@ -11,8 +11,8 @@ import App from "./App";
 
 
 const Index = () => {
-    // const [loading, setLoading] = useState(true)
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
+    // const [loading, setLoading] = useState(false)
     return (
         <section className="">
             <div>
@@ -48,10 +48,10 @@ const Index = () => {
                 </AnimatePresence>
 
             </div>
-            <div  className="bg-black pb-2">
+            <div  className="bg-black">
                 {
                     loading == false ?
-                        <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:.5}}>
+                        <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:4.5}}>
                             <App></App>
                         </motion.div>
                         :

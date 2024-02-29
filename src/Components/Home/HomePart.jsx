@@ -16,68 +16,6 @@ const HomePart = () => {
             <div>
                 <Parallax></Parallax>
             </div>
-            {/* <div className="my-10">
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-                <h1 className="text-5xl font-bold text-center">Hello MY Animation</h1>
-            </div> */}
         </section>
     );
 };
