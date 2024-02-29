@@ -19,7 +19,7 @@ const Index = () => {
                 <AnimatePresence>
                     {
                         loading == true ?
-                            <motion.div id="Homepage" onAnimationComplete={() => setLoading(false)} className="relative p-2 h-screen border-2">
+                            <motion.div id="Homepage" className="relative p-2 h-screen border-2">
                                 <motion.img
                                     initial={{ width: "30%", y: "400%", opacity: 0 }}
                                     animate={{ width: "30%", y: 0, height: "50%", x: "50%", opacity: 1 }}
@@ -51,8 +51,8 @@ const Index = () => {
             <div className="bg-black">
                 <AnimatePresence>
                     {
-                        loading === false ?
-                            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 4.5 }}>
+                        !loading ?
+                            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1,}} transition={{ delay: 4.5, }}>
                                 <App></App>
                             </motion.div>
                             :

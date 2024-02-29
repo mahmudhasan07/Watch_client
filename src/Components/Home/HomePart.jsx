@@ -4,7 +4,7 @@ import Parallax from "../Slider/Parallax";
 import Slider from "../Slider/Slider";
 
 
-const HomePart = () => {
+const HomePart = ({setLoading}) => {
     return (
         <section>
             <div>
@@ -12,7 +12,7 @@ const HomePart = () => {
             </div>
             <div>
                 {/* <FAQ></FAQ> */}
-                <QusSection></QusSection>
+                <QusSection setLoading={setLoading}></QusSection>
             </div>
             <div>
                 <Parallax></Parallax>

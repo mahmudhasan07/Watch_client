@@ -26,7 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ParallaxProvider>
       <RouterProvider router={router}>
         {/* <App /> */}
-        <Index />
+        <Index></Index>
       </RouterProvider>
     </ParallaxProvider>
   </React.StrictMode>,
