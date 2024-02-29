@@ -1,5 +1,5 @@
 import Banner from "../Banner/Banner";
-import FAQ from "../FAQ/FAQ";
+import QusSection from "../FAQ/QusSection";
 import Parallax from "../Slider/Parallax";
 import Slider from "../Slider/Slider";
 
@@ -11,7 +11,8 @@ const HomePart = () => {
                 <Banner></Banner>
             </div>
             <div>
-                <FAQ></FAQ>
+                {/* <FAQ></FAQ> */}
+                <QusSection></QusSection>
             </div>
             <div>
                 <Parallax></Parallax>

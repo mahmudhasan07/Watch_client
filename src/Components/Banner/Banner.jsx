@@ -20,7 +20,7 @@ const Banner = () => {
         }
     }
     return (
-        <section className="relative">
+        <section className="relative my-10">
             <div className="h-[500px] flex justify-center items-center">
                 <motion.img src={image} initial={{ width: "35%" }} animate={{ width: "100%", height: "100%", filter: { brightness: "80%" } }} transition={{ delay: 4.8, duration: 2, ease: "anticipate" }} className="object-cover object-center brightness-75"></motion.img>
             </div>

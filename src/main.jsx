@@ -5,8 +5,6 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Index from './Index.jsx'
-import Banner from './Components/Banner/Banner.jsx'
-import FAQ from './Components/FAQ/FAQ.jsx'
 import HomePart from './Components/Home/HomePart.jsx'
 
 
