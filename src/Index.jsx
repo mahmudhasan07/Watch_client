@@ -8,7 +8,6 @@ import image3 from "../public/watch3.png";
 import image4 from "../public/watch4.png";
 import image5 from "../public/watch_banner.png";
 import App from "./App";
-import "./Index2.css"
 
 
 const Index = () => {
