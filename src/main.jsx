@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { ParallaxProvider } from 'react-scroll-parallax';
 import Index from './Index.jsx'
 import Banner from './Components/Banner/Banner.jsx'
 import FAQ from './Components/FAQ/FAQ.jsx'
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element : <HomePart></HomePart>
+        element: <HomePart></HomePart>
       }
     ]
   }
@@ -24,9 +25,11 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}>
-      {/* <App /> */}
-      <Index/>
-    </RouterProvider>
+    <ParallaxProvider>
+      <RouterProvider router={router}>
+        {/* <App /> */}
+        <Index />
+      </RouterProvider>
+    </ParallaxProvider>
   </React.StrictMode>,
 )
