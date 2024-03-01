@@ -19,7 +19,7 @@ const Index = () => {
                 <AnimatePresence>
                     {
                         loading == true ?
-                            <motion.div id="Homepage" className="relative p-2 h-screen border-2">
+                            <motion.div id="Homepage"  className="relative p-2 h-screen border-2">
                                 <motion.img
                                     initial={{ width: "30%", y: "400%", opacity: 0 }}
                                     animate={{ width: "30%", y: 0, height: "50%", x: "50%", opacity: 1 }}
@@ -39,7 +39,7 @@ const Index = () => {
                                 <motion.img
                                     initial={{ width: "35%", y: "400%", opacity: 0 }}
                                     animate={{ width: "35%", y: "60%", x: "100%", opacity: 1 }}
-                                    transition={{ delay: 3, duration: 3, ease: "backOut" }} exit={{ opacity: 1, transition: { delay: .1 } }} onAnimationComplete={() => setLoading(false)} src={image5} className="absolute object-cover" ></motion.img>
+                                    transition={{ delay: 3, duration: 3, ease: "backOut" }} exit={{ opacity: 1, transition: { delay: .1 } }} onAnimationComplete={()=>setLoading(false)} src={image5} className="absolute object-cover" ></motion.img>
                             </motion.div>
                             :
                             ""
