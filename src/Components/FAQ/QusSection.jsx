@@ -10,13 +10,6 @@ const QusSection = () => {
     useEffect(() => {
         AOS.init();
 
-        const timeFuncation = setInterval(() => {
-            time++;
-            console.log(time);
-            if (time == 10) {
-                setHidden("block")
-            }
-        }, 2000);
     }, [time])
 
     return (
