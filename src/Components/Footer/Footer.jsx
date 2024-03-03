@@ -4,7 +4,7 @@ import logo from "../../../public/logo.png"
 const Footer = () => {
     return (
         <section>
-            <footer className="footer p-10 bg-gray-900 text-white">
+            <footer className="footer p-10 bg-gray-950 text-white">
                 <aside>
                     <img src={logo} className='w-24' alt="" />
                     <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>

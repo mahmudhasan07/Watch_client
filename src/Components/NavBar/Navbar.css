@@ -1,5 +1,19 @@
-.navli::before{
+.navli:hover::before{
 content: "";
-border: 1px solid white;
+/* border: 1px solid white; */
 width: 100%;
+background: linear-gradient(to right, #FC6F2F ,#FC6F2F , #515839,#515839);
+height: 3px;
+position: absolute;
+top: 30px;
+animation: hover normal 1s;
+}
+
+@keyframes hover {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
 }
