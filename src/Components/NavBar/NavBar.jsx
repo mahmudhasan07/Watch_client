@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion"
 import logo from "../../../public/logo.png"
+import "./Navbar.css"
 
 const NavBar = () => {
 
@@ -25,7 +26,7 @@ const NavBar = () => {
                 </div>
                 <div className='my-auto p-2 '>
                     <ul className='text-[#515839] text-xl font-extrabold flex flex-wrap gap-10'>
-                        <motion.li variants={animation} initial="initial" animate="animate" transition={{ delay: 5.1 , duration: 1.5, ease: "backOut" }}>Home</motion.li>
+                        <motion.li className='navli' variants={animation} initial="initial" animate="animate" transition={{ delay: 5.1 , duration: 1.5, ease: "backOut" }}>Home</motion.li>
                         <motion.li variants={animation} initial="initial" animate="animate" transition={{ delay: 5.4, duration: 1.5, ease: "backOut" }}>Watches</motion.li>
                         <motion.li variants={animation} initial="initial" animate="animate" transition={{ delay: 5.8, duration: 1.5, ease: "backOut" }}>Services</motion.li>
                         <motion.li variants={animation} initial="initial" animate="animate" transition={{ delay: 6.2, duration: 1.5, ease: "backOut" }}>About Us</motion.li>

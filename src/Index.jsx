@@ -1,4 +1,4 @@
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, LayoutGroup } from "framer-motion";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -16,49 +16,51 @@ const Index = () => {
     return (
         <section className="">
             <div>
-                <AnimatePresence>
+                <LayoutGroup>
                     {
                         loading == true ?
-                            <motion.div id="Homepage"  className="relative p-2 h-screen border-2">
-                                <motion.img
-                                    initial={{ width: "30%", y: "400%", opacity: 0 }}
-                                    animate={{ width: "30%", y: 0, height: "50%", x: "50%", opacity: 1 }}
-                                    transition={{ delay: 1, duration: 2, ease: "backOut" }} exit={{ opacity: 0 }} src={image1} className="absolute object-cover" ></motion.img>
-                                <motion.img
-                                    initial={{ width: "30%", y: "400%", opacity: 0 }}
-                                    animate={{ width: "30%", y: "120%", x: "50%", opacity: 1 }}
-                                    transition={{ delay: 2, duration: 2, ease: "backOut" }} exit={{ opacity: 0 }} src={image2} className="absolute object-cover" ></motion.img>
-                                <motion.img
-                                    initial={{ width: "30%", y: "400%", opacity: 0 }}
-                                    animate={{ width: "30%", y: 0, x: "200%", opacity: 1 }}
-                                    transition={{ delay: 1.5, duration: 2, ease: "backOut" }} exit={{ opacity: 0 }} src={image3} className="absolute object-cover" ></motion.img>
-                                <motion.img
-                                    initial={{ width: "30%", y: "400%", opacity: 0 }}
-                                    animate={{ width: "30%", y: "90%", height: "50%", x: "200%", opacity: 1 }}
-                                    transition={{ delay: 2.5, duration: 2, ease: "backOut" }} exit={{ opacity: 0 }} src={image4} className="absolute object-cover" ></motion.img>
-                                <motion.img
-                                    initial={{ width: "35%", y: "400%", opacity: 0 }}
-                                    animate={{ width: "35%", y: "60%", x: "100%", opacity: 1 }}
-                                    transition={{ delay: 3, duration: 3, ease: "backOut" }} exit={{ opacity: 1, transition: { delay: .1 } }} onAnimationComplete={()=>setLoading(false)} src={image5} className="absolute object-cover" ></motion.img>
-                            </motion.div>
+                            <AnimatePresence>
+                                <motion.div id="Homepage" className="absolute w-full p-2 h-screen border-2">
+                                    <motion.img
+                                        initial={{ width: "30%", y: "400%", opacity: 0 }}
+                                        animate={{ width: "30%", y: 0, height: "50%", x: "50%", opacity: 1 }}
+                                        transition={{ delay: 1, duration: 2, ease: "backOut" }} exit={{ opacity: 0 }} key={loading} src={image1} className="absolute object-cover" ></motion.img>
+                                    <motion.img
+                                        initial={{ width: "30%", y: "400%", opacity: 0 }}
+                                        animate={{ width: "30%", y: "120%", x: "50%", opacity: 1 }}
+                                        transition={{ delay: 2, duration: 2, ease: "backOut" }} exit={{ opacity: 0 }} key={loading} src={image2} className="absolute object-cover" ></motion.img>
+                                    <motion.img
+                                        initial={{ width: "30%", y: "400%", opacity: 0 }}
+                                        animate={{ width: "30%", y: 0, x: "200%", opacity: 1 }}
+                                        transition={{ delay: 1.5, duration: 2, ease: "backOut" }} exit={{ opacity: 0 }} key={loading} src={image3} className="absolute object-cover" ></motion.img>
+                                    <motion.img
+                                        initial={{ width: "30%", y: "400%", opacity: 0 }}
+                                        animate={{ width: "30%", y: "90%", height: "50%", x: "200%", opacity: 1 }}
+                                        transition={{ delay: 2.5, duration: 2, ease: "backOut" }} exit={{ opacity: 0 }} key={loading} src={image4} className="absolute object-cover" ></motion.img>
+                                    <motion.img
+                                        initial={{ width: "35%", y: "400%", opacity: 0 }}
+                                        animate={{ width: "35%", y: "60%", x: "100%", opacity: 1 }}
+                                        transition={{ delay: 3, duration: 3, ease: "backOut" }} exit={{ opacity: 1, transition: { delay: .1 } }} key={loading} onAnimationComplete={() => setLoading(false)} src={image5} className="absolute object-cover" ></motion.img>
+                                </motion.div>
+                            </AnimatePresence>
                             :
-                            ""
+                            <AnimatePresence>
+                                {
+                                    !loading ?
+                                        <motion.div initial={{ opacity: 0 }} key={!loading} animate={{ opacity: 1, }} transition={{ delay: 4.5}} className="bg-black">
+                                            <App></App>
+                                        </motion.div>
+                                        :
+                                        ""
+                                }
+                            </AnimatePresence>
                     }
 
-                </AnimatePresence>
+                </LayoutGroup>
 
             </div>
             <div className="bg-black">
-                <AnimatePresence>
-                    {
-                        !loading ?
-                            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1,}} transition={{ delay: 4.5, }}>
-                                <App></App>
-                            </motion.div>
-                            :
-                            ""
-                    }
-                </AnimatePresence>
+
             </div>
         </section>
     );
