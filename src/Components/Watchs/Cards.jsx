@@ -1,7 +1,6 @@
 import React from 'react';
 import watch from "../../../public/data.json"
 import Card from './Card';
-import { Parallax } from 'react-scroll-parallax';
 const Cards = () => {
     return (
         <section>
@@ -12,7 +11,6 @@ const Cards = () => {
                         watch.map((element, idx) => <Card card={element} key={idx} id={idx}></Card>)
                     }
                 </div>
-        
             </section>
     );
 };

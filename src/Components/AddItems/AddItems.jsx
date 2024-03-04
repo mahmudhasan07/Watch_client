@@ -2,12 +2,18 @@
 import './AddItems.css'
 const AddItems = () => {
 
+    const handleAddWatch = (e) => {
+        e.preventDefault()
+        const from = e.target
+        
+    }
+
 
     return (
         <section className="h-screen">
-                <h1 className='text-4xl font-bold text-center text-white my-12'>Add Your Watches</h1>
+            <h1 className='text-4xl font-bold text-center text-white my-12'>Add Your Watches</h1>
             <div className="bg-gray-950  flex items-center p-5 justify-center w-fit mx-auto">
-                <form action="" className="text-white space-y-3">
+                <form onSubmit={handleAddWatch} action="" className="text-white space-y-3">
                     <div className="flex flex-wrap gap-10">
                         <div className='space-y-1'>
                             <label htmlFor="" className="text-lg font-semibold">Watch Name</label> <br />
@@ -35,7 +41,7 @@ const AddItems = () => {
                     <div className="">
                         <label htmlFor="" className='text-lg font-semibold'>Watch Description</label>
                         <div className="p-2">
-                        <textarea name="" className="w-full rounded-2xl bg-black p-2" id=""  rows="10"></textarea>
+                            <textarea name="" className="w-full rounded-2xl bg-black p-2" id="" rows="10"></textarea>
                         </div>
                     </div>
                     <div>
@@ -44,7 +50,7 @@ const AddItems = () => {
                 </form>
 
             </div>
-            
+
         </section>
     );
 };
