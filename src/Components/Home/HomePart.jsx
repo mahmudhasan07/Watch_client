@@ -10,16 +10,16 @@ const HomePart = () => {
         <section>
             <div>
                 <Banner></Banner>
+                <QusSection ></QusSection>
+                <Cards></Cards>
+                <Parallax></Parallax>
             </div>
             <div>
                 {/* <FAQ></FAQ> */}
-                <QusSection ></QusSection>
             </div>
             <div>
-                <Cards></Cards>
             </div>
             <div>
-                <Parallax></Parallax>
             </div>
         </section>
     );

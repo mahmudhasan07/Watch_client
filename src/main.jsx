@@ -6,6 +6,8 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Index from './Index.jsx'
 import HomePart from './Components/Home/HomePart.jsx'
+import AddItems from './Components/AddItems/AddItems.jsx'
+import "./locomotive-scroll.css"
 
 
 const router = createBrowserRouter([
@@ -16,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePart></HomePart>
+      },
+      {
+        path : "/Added-Watches",
+        element : <AddItems></AddItems>
       }
     ]
   }

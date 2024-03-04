@@ -1,6 +1,7 @@
 import image from "../../../public/watch_banner.png"
 import { motion } from "framer-motion";
 import "./Banner.css"
+import { Parallax } from "react-scroll-parallax";
 const Banner = () => {
 
     const divNo1 = {

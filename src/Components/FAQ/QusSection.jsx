@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Parallax, ParallaxContext } from "react-scroll-parallax";
 
 const QusSection = () => {
     const [hidden, setHidden] = useState("hidden")
@@ -13,6 +14,7 @@ const QusSection = () => {
     }, [time])
 
     return (
+
         <div data-aos="fade-up"
             data-aos-offset="500"
             data-aos-duration="1000"
