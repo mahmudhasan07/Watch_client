@@ -20,7 +20,7 @@ const NavBar = () => {
     }
 
     const activeRoute =({isActive, isPending})=>
-        isActive? "" : isPending ? "":""
+        isActive? "bg-orange-600 text-white p-1 rounded-xl" : isPending ? "":"p-1"
     
 
     return (
@@ -30,7 +30,7 @@ const NavBar = () => {
                     <img src={logo} className='w-40 h-24' alt="" />
                 </div>
                 <div className='my-auto p-2 '>
-                    <ul className='text-[#515839] text-xl font-extrabold flex flex-wrap gap-10'>
+                    <ul className='text-[#515839]  text-xl font-extrabold flex flex-wrap gap-10'>
                         <NavLink className={activeRoute} to={`/`}><motion.li className='navli' variants={animation} initial="initial" animate="animate" transition={{ delay: 5.1 , duration: 1.5, ease: "backOut" }}>Home</motion.li></NavLink>
                         <NavLink className={activeRoute} to={`/watches`}><motion.li className='navli' variants={animation} initial="initial" animate="animate" transition={{ delay: 5.4, duration: 1.5, ease: "backOut" }}>Watches</motion.li></NavLink>
                         <NavLink className={activeRoute} to={`/added-watches`}><motion.li className='navli' variants={animation} initial="initial" animate="animate" transition={{ delay: 5.8, duration: 1.5, ease: "backOut" }}>Add Watches</motion.li></NavLink>
