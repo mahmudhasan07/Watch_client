@@ -47,3 +47,12 @@
     background: #515839;
     transition: background 0s;
    }
+
+   #select > option:checked{
+    background-color: orange;
+    color: green;
+   }
+
+   #sectionDiv{
+    filter: drop-shadow(10px 10px 10px gray);
+   }
