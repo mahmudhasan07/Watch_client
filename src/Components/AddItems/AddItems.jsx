@@ -8,6 +8,18 @@ const AddItems = () => {
     const handleAddWatch = (e) => {
         e.preventDefault()
         const from = e.target
+
+        const name  = from.name.value
+        const brand  = from.brand.value
+        const price  = from.price.value
+        const gender  = from.gender.value
+        const img  = from.img.files[0]
+        const note  = from.note.value
+        const data = {name,brand,price,gender,img,note}
+        console.log(data);
+
+        
+        
         
     }
 
@@ -28,21 +40,21 @@ const AddItems = () => {
                     <div className="flex flex-wrap gap-10">
                         <div className='space-y-1'>
                             <label htmlFor="" className="text-lg font-semibold">Watch Name</label> <br />
-                            <input type="text" className="2 w-80 bg-black rounded-2xl p-1" />
+                            <input type="text" name="name" className="2 w-80 bg-black rounded-2xl p-1" />
                         </div>
                         <div className='space-y-1'>
                             <label htmlFor="" className="text-lg font-semibold">Watch Brand Name</label> <br />
-                            <input type="text" className=" w-80 bg-black rounded-2xl p-1" />
+                            <input type="text" name="brand" className=" w-80 bg-black rounded-2xl p-1" />
                         </div>
                     </div>
                     <div className="flex flex-wrap gap-10">
                         <div className='space-y-1'>
                             <label htmlFor="" className="text-lg font-semibold">Watch Price</label> <br />
-                            <input type="text" className=" w-80 bg-black rounded-2xl p-1" />
+                            <input type="text" name="price" className=" w-80 bg-black rounded-2xl p-1" />
                         </div>
                         <div className='space-y-1'>
                             <label htmlFor="" className="text-lg font-semibold">Type of Gender</label> <br />
-                            <select name="" id="select" className=" w-80 bg-black rounded-2xl p-1">
+                            <select name="gender" id="select"  className=" w-80 bg-black rounded-2xl p-1">
                                 <option className=" focus:bg-orange-600" value="men">Men</option>
                                 <option className=" focus:bg-orange-600" value="women">Women</option>
                                 <option className=" focus:bg-orange-600" value="Kids">Kids</option>
@@ -52,7 +64,7 @@ const AddItems = () => {
                     <div className=" flex flex-wrap gap-10">
                         <div className="">
                         <label htmlFor="" className='text-lg font-semibold'>Watch Description</label> <br />
-                            <input onChange={handleimage} type="file"  className=" w-80 bg-black rounded-2xl p-1"/>
+                            <input onChange={handleimage} name="img" type="file"  className=" w-80 bg-black rounded-2xl p-1"/>
                         </div>
                         <div className="">
                             <img src={image} alt="" className="w-32 object-cover" />
@@ -61,7 +73,7 @@ const AddItems = () => {
                     <div className="">
                         <label htmlFor="" className='text-lg font-semibold'>Watch Description</label>
                         <div className="p-2">
-                            <textarea name="" className="w-full rounded-2xl bg-black p-2" id="" rows="10"></textarea>
+                            <textarea name="note" className="w-full rounded-2xl bg-black p-2" id="" rows="10"></textarea>
                         </div>
                     </div>
                     <div>
