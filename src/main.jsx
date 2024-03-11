@@ -9,6 +9,7 @@ import HomePart from './Components/Home/HomePart.jsx'
 import AddItems from './Components/AddItems/AddItems.jsx'
 import "./locomotive-scroll.css"
 import Cards from './Components/Watchs/Cards.jsx'
+import Services from './Components/Services/Services.jsx'
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path :'/watches',
         element : <Cards></Cards>
+      },
+      {
+        path : "/services",
+        element : <Services></Services>
       }
     ]
   }
