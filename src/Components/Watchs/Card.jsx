@@ -8,8 +8,8 @@ const Card = ({ card, id }) => {
     return (
         <div
 
-            className={`w-72 h-80 border-2 relative  text-white space-y-2 rounded-xl`}>
-            <img src={card?.Watch_image} className='h-full w-full object-cover rounded-lg' alt="" />
+            className={`card w-72 h-80 border-2 relative  text-white space-y-2 rounded-xl`}>
+            <img src={card?.Watch_image} id='card-img' className=' h-full w-full object-cover rounded-lg' alt="" />
             <div id='cardinfo'>
                 <h1>{card?.Watch_name}</h1>
                 <h1>{card?.Watch_brand}</h1>

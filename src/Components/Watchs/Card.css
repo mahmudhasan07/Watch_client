@@ -1,0 +1,10 @@
+#cardinfo{
+    position: relative;
+    transition: all .5s;
+}
+
+#card-img:hover #cardinfo{
+    position: absolute;
+    top: 1/2;
+    background-color: gray;
+}
