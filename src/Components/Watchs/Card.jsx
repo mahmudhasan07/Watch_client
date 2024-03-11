@@ -1,16 +1,22 @@
 import Aos from 'aos';
 import React, { useEffect, useRef, useState } from 'react';
 import { animate, motion, useInView } from 'framer-motion';
+import "./Card.css"
 
 const Card = ({ card, id }) => {
     console.log(id);
     return (
         <div
-        
-            className={`w-72 border-2 text-white space-y-2 rounded-xl`}>
-            <img src={card?.image} alt="" />
-            <h1 className='text-2xl font-bold'>{card?.title}</h1>
-            <h1 className='text-2xl font-bold'>{card.name}</h1>
+
+            className={`w-72 h-80 border-2 relative  text-white space-y-2 rounded-xl`}>
+            <img src={card?.Watch_image} className='h-full w-full object-cover rounded-lg' alt="" />
+            <div id='cardinfo'>
+                <h1>{card?.Watch_name}</h1>
+                <h1>{card?.Watch_brand}</h1>
+                <h1>{card?.Watch_gender}</h1>
+                <h1>{card?.Watch_price}</h1>
+            </div>
+
         </div>
     );
 };

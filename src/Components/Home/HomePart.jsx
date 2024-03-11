@@ -10,14 +10,13 @@ const HomePart = () => {
         <section>
             <div>
                 <Banner></Banner>
+            </div>
+            <div>
                 <QusSection ></QusSection>
-                <Cards></Cards>
+
+            </div>
+            <div>
                 <Parallax></Parallax>
-            </div>
-            <div>
-                {/* <FAQ></FAQ> */}
-            </div>
-            <div>
             </div>
             <div>
             </div>
