@@ -6,17 +6,17 @@ const Review = () => {
     const [review, setreview] = useState(0);
 
     useEffect(() => {
-        const outlettimer = setInterval(() => {
-            const count = visit+1
+        setInterval(() => {
+            const count = visit + 10
             setvisit(count)
-        },100)
-    }, [visit]);
+        }, 1000)
+    }, [visit, setvisit]);
     return (
         <section>
-            <div>
-                {
+            <div className='text-4xl'>
+                <h1>{
                     visit
-                }
+                }</h1>
             </div>
         </section>
     );
