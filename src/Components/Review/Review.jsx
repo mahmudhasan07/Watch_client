@@ -7,9 +7,10 @@ const Review = () => {
 
     useEffect(() => {
         const outlettimer = setInterval(() => {
-
-        })
-    }, []);
+            const count = visit+1
+            setvisit(count)
+        },100)
+    }, [visit]);
     return (
         <section>
             <div>

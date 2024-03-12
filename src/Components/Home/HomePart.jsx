@@ -1,5 +1,6 @@
 import Banner from "../Banner/Banner";
 import QusSection from "../FAQ/QusSection";
+import Review from "../Review/Review";
 import Parallax from "../Slider/Parallax";
 import Slider from "../Slider/Slider";
 import Cards from "../Watchs/Cards";
@@ -23,6 +24,7 @@ const HomePart = () => {
                 <Parallax></Parallax>
             </div>
             <div>
+                <Review></Review>
             </div>
         </section>
     );
