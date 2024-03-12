@@ -4,12 +4,15 @@ import Card from './Card';
 import useAxios, { AxiosSecure } from '../Axios/useAxios';
 const Cards = () => {
     const axiosLink = useAxios(AxiosSecure)
+    const [loading, setloading] = useState(false)
     const [watch, setwatch] = useState();
     useEffect(() => {
+        setloading(true)
         axiosLink.get("/watches")
             .then(res => {
                 console.log(res);
                 setwatch(res?.data)
+                setloading(false)
 
             })
             .catch(error => {
@@ -21,9 +24,13 @@ const Cards = () => {
         <section>
 
             <h1 className='text-4xl font-extrabold text-center my-10 text-white'>Watches Collection </h1>
-            <div className='flex flex-wrap justify-center gap-5'>
+            <div className='flex flex-wrap justify-center gap-10 my-10'>
                 {
-                    watch?.map((element, idx) => <Card card={element} key={idx} id={idx}></Card>)
+                    loading == true ?
+                        <p className='h-screen text-5xl my-auto'>loading</p>
+                        :
+                            watch?.map((element, idx) => <Card card={element} key={idx} id={idx}></Card>)
+                            
                 }
             </div>
         </section>

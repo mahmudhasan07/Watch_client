@@ -66,7 +66,7 @@ const AddItems = () => {
     return (
         <section className="my-10">
             <h1 className='text-4xl font-bold text-center text-white mb-10'>Add Your Watches</h1>
-            <div id="sectionDiv" className="bg-gray-950 rounded-2xl flex items-center p-5 justify-center w-fit mx-auto">
+            <motion.div initial={{y:"-500%", opacity:0}} animate={{y:0, opacity:1}} transition={{duration:1.5, ease:"backOut"}} id="sectionDiv" className="bg-gray-950 rounded-2xl flex items-center p-5 justify-center w-fit mx-auto">
                 <form onSubmit={handleAddWatch} action="" className="text-white space-y-3">
                     <div className="flex flex-wrap gap-10">
                         <div className='space-y-1'>
@@ -112,7 +112,7 @@ const AddItems = () => {
                     </div>
                 </form>
 
-            </div>
+            </motion.div>
 
         </section>
     );

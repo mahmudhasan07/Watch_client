@@ -8,7 +8,7 @@ const Card = ({ card, id }) => {
     return (
         <div
 
-           id='card' className={`card w-96 h-96 border-2 relative  text-white space-y-2 rounded-xl`}>
+           id='card' className={`card w-96 h-96 border-2  text-white space-y-2 rounded-xl`}>
             <img src={card?.Watch_image} id='card-img' className='h-96 w-full object-cover rounded-lg' alt="" />
             <div id='cardinfo' className='p-3'>
                 <h1 className='text-xl font-semibold'>Model: {card?.Watch_name}</h1>
