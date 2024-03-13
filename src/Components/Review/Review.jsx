@@ -6,16 +6,21 @@ const Review = () => {
     const [review, setreview] = useState(0);
 
     useEffect(() => {
-        setInterval(() => {
-            const count = visit + 10
-            setvisit(count)
-        }, 1000)
-    }, [visit, setvisit]);
+        
+    }, [visit]);
+    let value = 1000
+    // setInterval(() => {
+    //     // const count = 
+    //     setvisit(visit +10)
+    //     console.log(visit);
+    //     // setvisit(value)
+    // }, 1000)
+    console.log(visit);
     return (
         <section>
             <div className='text-4xl'>
                 <h1>{
-                    visit
+                    // visit
                 }</h1>
             </div>
         </section>
