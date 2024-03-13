@@ -13,7 +13,7 @@ const WhyUs = () => {
                     <div className='w-12 absolute top-0 left-40 h-96 -skew-x-12 bg-[#FC6F2F]'></div>
                 </div>
                 <div className='text-3xl space-y-3 font-semibold'>
-                    <div>
+                    {/* <div>
                         <h1>SAFE AND <br /> SECURE CHECKOUT</h1>
                     </div>
                     <div>
@@ -24,7 +24,7 @@ const WhyUs = () => {
                     </div>
                     <div>
                         <h1>FREE SHIPPING <br /> NATIONWIDE WITH 72 HOURS</h1>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

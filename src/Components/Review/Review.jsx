@@ -18,6 +18,17 @@ const Review = () => {
             }
         }, 5)
 
+        setInterval(() => {
+            value2 = (value2+ 0.10)
+            // console.log(value2.toFixed(2));
+            if(value2 < 4.7){
+                setreview(value2.toFixed(2))
+            }else{
+                clearInterval()
+            }
+
+        }, 700);
+
 
     }, []);
     return (
