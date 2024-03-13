@@ -23,7 +23,7 @@ const Cards = () => {
     return (
         <section>
 
-            <h1 className='text-4xl font-extrabold text-center my-10 text-white'>Watches Collection </h1>
+            <h1 className='text-4xl font-extrabold text-center my-10 text-[#515839]'>Watches <span className='text-[#FC6F2F]'>Collection</span> </h1>
             <div className='flex flex-wrap justify-center gap-10 my-10'>
                 {
                     loading == true ?
