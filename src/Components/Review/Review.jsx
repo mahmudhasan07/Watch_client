@@ -28,7 +28,16 @@ const Review = () => {
             }
 
         }, 700);
+        setInterval(() => {
+            value3 = value3+10
+            if(value3 <10010){
+                setsell(value3)
 
+            }else{
+                clearInterval()
+            }
+
+        }, 50);
 
     }, []);
     return (
