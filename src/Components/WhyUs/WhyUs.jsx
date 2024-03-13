@@ -11,17 +11,32 @@ import "./why.css"
 
 const WhyUs = () => {
     return (
-        <section className=' mt-16'>
+        <section
+            data-aos="fade-up"
+            data-aos-offset="500"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            className=' mt-16'>
             <h1 className='text-5xl font-bold text-center mb-10 text-[#515839]'>Our <span className='text-[#FC6F2F]'>Services</span></h1>
             <div className='flex flex-wrap lg:my-16 md:my-10 my-6 justify-around'>
-                <div className='relative z-50 w-fit py-5'>
+                <div
+                    data-aos="fade-left"
+                    data-aos-offset="600"
+                    data-aos-duration="1100"
+                    data-aos-easing="ease-in-out"
+                    className='relative z-50 w-fit py-5'>
                     <img id='IMG' src="https://i.ibb.co/PjqqfxS/Screenshot-2024-03-12-172217-removebg-preview.png" className='w-72 my-2 z-50 relative' alt="" />
                     <div className='w-12 absolute top-0 left-20 h-96 -skew-x-12 bg-[#515839]'></div>
                     <div className='w-12 absolute top-0 left-40 h-96 -skew-x-12 bg-[#FC6F2F]'></div>
                 </div>
-                <div className='text-3xl space-y-5 text-[#515839] font-semibold'>
+                <div
+                    data-aos="fade-right"
+                    data-aos-offset="600"
+                    data-aos-duration="1100"
+                    data-aos-easing="ease-in-out"
+                    className='text-3xl space-y-5 text-[#515839] font-semibold'>
                     <div className='flex gap-5'>
-                        <MdOutlineSecurity  className='text-6xl text-[#FC6F2F]'></MdOutlineSecurity>
+                        <MdOutlineSecurity className='text-6xl text-[#FC6F2F]'></MdOutlineSecurity>
                         <h1>SAFE AND <br /> SECURE CHECKOUT</h1>
                     </div>
                     <div className='flex gap-5'>
