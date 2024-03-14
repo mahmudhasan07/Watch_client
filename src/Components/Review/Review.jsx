@@ -41,7 +41,8 @@ const Review = () => {
 
     }, []);
     return (
-        <section className='my-10 py-12 font-semibold flex justify-around text-[#FC6F2F] bg-[#515839]'>
+        <section className='mt-8 relative w-10/12 rounded-2xl mx-auto py-10  font-semibold  text-[#FC6F2F] bg-[#515839]'>
+            <div className='flex justify-around pb-5 top-5  bg-[#515839] rounded-2xl absolute w-full'>
             <div className='text-4xl text-center'>
                 <h1>{visit}<span>+</span></h1>
                 <h1>Customer Visited</h1>
@@ -53,6 +54,7 @@ const Review = () => {
             <div className='text-4xl text-center'>
                 <h1>{sell}<span>+</span></h1>
                 <h1>Customer Purchased</h1>
+            </div>
             </div>
         </section>
     );
