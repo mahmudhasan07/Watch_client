@@ -25,16 +25,16 @@ const Banner = () => {
             <div className="h-[600px] flex justify-center items-center">
                 <motion.img src="https://i.ibb.co/yyWyNFY/Watch-Collectors.jpg" initial={{ width: "35%" }} animate={{ width: "100%", height: "100%", filter: { brightness: "80%" } }} transition={{ delay: 4.8, duration: 2, ease: "anticipate" }} className="object-cover object-center brightness-75"></motion.img>
             </div>
-            <div className="absolute overflow-hidden w-full flex flex-wrap justify-around top-1/4">
+            <div className="absolute overflow-hidden left-16 top-1/4">
 
-                <motion.div variants={divNo1} initial="initial" animate="animate" transition={{delay:5.5, duration:2.5, ease:"backOut"}} className="w-1/2 my-auto text-white  space-y-2">
+                <motion.div variants={divNo1} initial="initial" animate="animate" transition={{delay:5.5, duration:2.5, ease:"backOut"}} className="mt-10 text-white  space-y-2">
                     <h1 className="text-5xl font-extrabold">Welcome To Our Website</h1>
-                    <h1 className="text-3xl font-bold">Where you can buy your favorite watch in latest collection</h1>
+                    <h1 className="text-3xl font-bold">Where you can buy your favorite watch in latest <br /> collection</h1>
                     <button id="btn" className="">Shop Now</button>
                 </motion.div>
-                <motion.div variants={divNo2} initial="initial" animate="animate" transition={{delay:5.5, duration:2.5, ease:"backOut"}}className="w-1/3 ">
+                {/* <motion.div variants={divNo2} initial="initial" animate="animate" transition={{delay:5.5, duration:2.5, ease:"backOut"}}className="w-1/3 ">
                     <img src={image} className="rounded-2xl my-auto" alt="" />
-                </motion.div>
+                </motion.div> */}
 
             </div>
             
