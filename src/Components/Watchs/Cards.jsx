@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import Card from './Card';
 import useAxios, { AxiosSecure } from '../Axios/useAxios';
 const Cards = () => {
     const axiosLink = useAxios(AxiosSecure)
+    const search = useRef()
     const [loading, setloading] = useState(false)
     const [watch, setwatch] = useState();
     useEffect(() => {
@@ -19,11 +20,20 @@ const Cards = () => {
                 console.log(error);
             })
     }, [axiosLink]);
-    console.log(watch);
+    // console.log(watch);
+    const handlesearch =(e)=>{
+        e.preventDefault()
+        const data = search.current.value
+        
+    }
     return (
         <section>
 
             <h1 className='text-4xl font-extrabold text-center my-10 text-[#515839]'>Watches <span className='text-[#FC6F2F]'>Collection</span> </h1>
+            <div className='flex justify-center gap-3'>
+                <input ref={search} type="text" className='lg:w-96 md:w-80 w-72 border-2 bg-black text-white p-2 rounded-2xl' />
+                <button onClick={handlesearch} className='btn border-none hover:bg-[#FC6F2F] bg-[#515839] text-white'>Search</button>
+            </div>
             <div className='flex flex-wrap justify-center gap-10 my-10'>
                 {
                     loading == true ?

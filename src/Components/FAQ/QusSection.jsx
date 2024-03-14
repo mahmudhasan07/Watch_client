@@ -20,7 +20,7 @@ const QusSection = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             className="mb-20">
-            <h1 className="text-5xl font-bold text-center mb-10 z-50 text-[#515839]">Frequently <span className="text-[#FC6F2F]">Asked</span> Questions</h1>
+            <h1 className="text-5xl font-bold text-center lg:mb-16 md:mb-10 mb-6 z-50 text-[#515839]">Frequently <span className="text-[#FC6F2F]">Asked</span> Questions</h1>
                 <div className={`flex flex-wrap  justify-around py-1 `}>
                     <div
                         data-aos="fade-left"
