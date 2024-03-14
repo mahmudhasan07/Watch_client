@@ -21,10 +21,20 @@ const Cards = () => {
             })
     }, [axiosLink]);
     // console.log(watch);
-    const handlesearch =(e)=>{
+    const handlesearch = (e) => {
         e.preventDefault()
         const data = search.current.value
-        
+        console.log(data);
+        setloading(true)
+        axiosLink.get(`/search/${data}`)
+            .then(res => {
+                console.log(res);
+                setloading(false)
+            })
+            .catch(error => {
+                console.log(error);
+            })
+
     }
     return (
         <section>
@@ -39,8 +49,8 @@ const Cards = () => {
                     loading == true ?
                         <p className='h-screen text-5xl my-auto'>loading</p>
                         :
-                            watch?.map((element, idx) => <Card card={element} key={idx} id={idx}></Card>)
-                            
+                        watch?.map((element, idx) => <Card card={element} key={idx} id={idx}></Card>)
+
                 }
             </div>
         </section>
