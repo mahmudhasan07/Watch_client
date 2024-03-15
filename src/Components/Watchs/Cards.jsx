@@ -44,6 +44,13 @@ const Cards = () => {
                 <input ref={search} type="text" className='lg:w-96 md:w-80 w-72 border-2 bg-black text-white p-2 rounded-2xl' />
                 <button onClick={handlesearch} className='btn border-none hover:bg-[#FC6F2F] bg-[#515839] text-white'>Search</button>
             </div>
+            <div>
+                <select name="sort" id="">
+                    <option value="default">Default</option>
+                    <option value="asc">Low to High</option>
+                    <option value="desc">High to Low</option>
+                </select>
+            </div>
             <div className='flex flex-wrap justify-center gap-10 my-10'>
                 {
                     loading == true ?
