@@ -18,7 +18,7 @@ const WhyUs = () => {
             data-aos-easing="ease-in-out"
             className=' mt-16'>
             <h1 className='text-5xl font-bold text-center mb-10 text-[#515839]'>Our <span className='text-[#FC6F2F]'>Services</span></h1>
-            <div className='flex flex-wrap lg:my-16 md:my-10 my-6 justify-around'>
+            <div className='flex flex-wrap  justify-around'>
                 <div
                     data-aos="fade-left"
                     data-aos-offset="600"

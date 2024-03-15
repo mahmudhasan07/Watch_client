@@ -5,13 +5,15 @@ import useAxios, { AxiosSecure } from '../Axios/useAxios';
 const Cards = () => {
     const axiosLink = useAxios(AxiosSecure)
     const search = useRef()
+    // const sort =  useRef()
     const [loading, setloading] = useState(false)
     const [watch, setwatch] = useState();
+    const [sort, setsort] = useState("");
     useEffect(() => {
         setloading(true)
-        axiosLink.get("/watches")
+        axiosLink.get(`/watches?data=${sort}`)
             .then(res => {
-                console.log(res);
+                // console.log(res);
                 setwatch(res?.data)
                 setloading(false)
 
@@ -19,7 +21,7 @@ const Cards = () => {
             .catch(error => {
                 console.log(error);
             })
-    }, [axiosLink]);
+    }, [axiosLink, sort]);
     // console.log(watch);
     const handlesearch = (e) => {
         e.preventDefault()
@@ -28,12 +30,35 @@ const Cards = () => {
         setloading(true)
         axiosLink.get(`/search/${data}`)
             .then(res => {
-                console.log(res);
+                console.log(res.data.length);
+                setwatch(res?.data)
                 setloading(false)
             })
             .catch(error => {
                 console.log(error);
             })
+
+        if (data.length < 1) {
+            setloading(true)
+            axiosLink.get(`/watches?data=${sort}`)
+                .then(res => {
+                    // console.log(res);
+                    setwatch(res?.data)
+                    setloading(false)
+
+                })
+                .catch(error => {
+                    console.log(error);
+                })
+        }
+
+    }
+
+    const handlesort = (e) => {
+        e.preventDefault()
+        const value = e.target.value
+        console.log(value);
+        setsort(value)
 
     }
     return (
@@ -45,7 +70,7 @@ const Cards = () => {
                 <button onClick={handlesearch} className='btn border-none hover:bg-[#FC6F2F] bg-[#515839] text-white'>Search</button>
             </div>
             <div className='flex justify-end mr-10'>
-                <select name="sort" id="">
+                <select onChange={handlesort} name="sort" id="" className='p-1 text-lg font-semibold rounded-xl'>
                     <option value="default">Default</option>
                     <option value="asc">Low to High</option>
                     <option value="desc">High to Low</option>
@@ -56,7 +81,10 @@ const Cards = () => {
                     loading == true ?
                         <p className='h-screen text-5xl my-auto'>loading</p>
                         :
-                        watch?.map((element, idx) => <Card card={element} key={idx} id={idx}></Card>)
+                        watch?.length > 0 ?
+                            watch?.map((element, idx) => <Card card={element} key={idx} id={idx}></Card>)
+                            :
+                            <h1 className='text-4xl font-bold my-10'>No Result Found</h1>
 
                 }
             </div>

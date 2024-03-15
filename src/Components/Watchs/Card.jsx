@@ -4,11 +4,11 @@ import { animate, motion, useInView } from 'framer-motion';
 import "./Card.css"
 
 const Card = ({ card, id }) => {
-    console.log(id);
+    // console.log(id);
     const note = card?.Watch_note
     // console.log(note);
     const newarray = note.split(".")
-    console.log(newarray);
+    // console.log(newarray);
     return (
         <div
 
