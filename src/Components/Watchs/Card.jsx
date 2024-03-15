@@ -19,7 +19,7 @@ const Card = ({ card, id }) => {
                 <h1 className='text-xl p-1 font-semibold'>Brand: {card?.Watch_brand}</h1>
                 <h1 className='text-xl p-1 font-semibold'>Gender: {card?.Watch_gender}</h1>
                 <h1 className='text-xl p-1 font-semibold'>Price: {card?.Watch_price}</h1>
-                <h1 className='text-lg p-1'>Note: {card?.Watch_note}</h1>
+                <button className='btn' id='detailsBTN'>Details</button>
             </div>
 
         </div>
