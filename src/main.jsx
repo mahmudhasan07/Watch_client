@@ -10,6 +10,7 @@ import AddItems from './Components/AddItems/AddItems.jsx'
 import "./locomotive-scroll.css"
 import Cards from './Components/Watchs/Cards.jsx'
 import Services from './Components/Services/Services.jsx'
+import CardInfo from './Components/Watchs/CardInfo.jsx'
 
 
 const router = createBrowserRouter([
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path :'/watches',
         element : <Cards></Cards>
+      },
+      {
+        path : '/watches/model=:id',
+        element : <CardInfo></CardInfo>
       },
       {
         path : "/services",

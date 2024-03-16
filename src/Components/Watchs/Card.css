@@ -41,7 +41,7 @@
     left: 50%;
     z-index: -1;
     border-radius: 10%;
-    transition: all .7s;
+    transition: all .5s;
 }
 
 #detailsBTN:hover::before{
