@@ -23,13 +23,14 @@ const Banner = () => {
     return (
         <section className="relative my-2">
             <div className="h-[600px] flex justify-center items-center">
-                <motion.img src="https://i.ibb.co/yyWyNFY/Watch-Collectors.jpg" initial={{ width: "35%" }} animate={{ width: "100%", height: "100%", filter: { brightness: "80%" } }} transition={{ delay: 4.8, duration: 2, ease: "anticipate" }} className="object-cover object-center brightness-75"></motion.img>
+                <motion.img src="https://i.ibb.co/yyWyNFY/Watch-Collectors.jpg" initial={{ width: "35%" }} animate={{ width: "100%", height: "100%", filter: { brightness: "80%" } }} transition={{ delay: 4.8, duration: 2, ease: "anticipate" }} className="object-cover opacity-95 object-center"></motion.img>
             </div>
             <div className="absolute overflow-hidden left-16 top-1/4">
 
-                <motion.div variants={divNo1} initial="initial" animate="animate" transition={{delay:5.5, duration:2.5, ease:"backOut"}} className="mt-10 text-white  space-y-2">
-                    <h1 className="text-5xl font-extrabold">Welcome To Our Website</h1>
-                    <h1 className="text-3xl font-bold">Where you can buy your favorite watch in latest <br /> collection</h1>
+                <motion.div variants={divNo1} initial="initial" animate="animate" transition={{delay:5.5, duration:2.5, ease:"backOut"}} className="mt-8 text-gray-200  space-y-2">
+                    <h1 className="text-5xl font-extrabold">Discover our watch boutique, <br />designed for excellence.  <br />Take a deep dive into our collection.</h1>
+                    <h1 className="text-3xl font-bold">Explore Our Stylish Timepieces</h1>
+                    {/* <h1 className="text-3xl font-bold">Discover Our Premier Watches</h1> */}
                     <button id="btn" className="">Shop Now</button>
                 </motion.div>
                 {/* <motion.div variants={divNo2} initial="initial" animate="animate" transition={{delay:5.5, duration:2.5, ease:"backOut"}}className="w-1/3 ">
