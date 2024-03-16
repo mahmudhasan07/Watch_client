@@ -1,7 +1,7 @@
 #cardinfo {
     position: relative;
     height: 100%;
-    transition: all 2s;
+    transition: all 1s;
     overflow: hidden;
 }
 
@@ -12,7 +12,7 @@
     margin-top: -220px;
     width: 100%;
     height: 100%;
-    transition: all 2s;
+    transition: all 1.5s;
     opacity: 1;
     backdrop-filter: contrast(10%) blur(10px) brightness(70%) ;
 }
@@ -38,7 +38,7 @@
     position: absolute;
     background: #FC6F2F;
     top: 100%;
-    left: 50%;
+    left: 100%;
     z-index: -1;
     border-radius: 10%;
     transition: all .5s;
