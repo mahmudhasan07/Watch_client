@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         element : <Cards></Cards>
       },
       {
-        path : '/watches/model=:id',
+        path : '/watches/:id',
         element : <CardInfo></CardInfo>
       },
       {
