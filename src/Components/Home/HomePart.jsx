@@ -3,6 +3,7 @@ import QusSection from "../FAQ/QusSection";
 import Review from "../Review/Review";
 import Parallax from "../Slider/Parallax";
 import Slider from "../Slider/Slider";
+import Trending from "../Trending/Trending";
 import Cards from "../Watchs/Cards";
 import WhyUs from "../WhyUs/WhyUs";
 
@@ -12,6 +13,9 @@ const HomePart = () => {
         <section>
             <div>
                 <Banner></Banner>
+            </div>
+            <div>
+                <Trending></Trending>
             </div>
             <div>
                 <WhyUs></WhyUs>
