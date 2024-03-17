@@ -36,20 +36,27 @@ const AddItems = () => {
                     const imgURL = res?.data?.data?.display_url
 
                     const data = { name, brand, price, gender, imgURL, note }
+                    if (imgURL) {
 
-                    axiosLink.post("/products", data)
-                        .then(res => {
-                            console.log(res);
-                            Swal.fire({
-                                title: "Successfully Added",
-                                text: "Your Product is successfully added",
-                                icon: "success"
-                              });
+                        axiosLink.post("/products", data)
+                            .then(res => {
+                                console.log(res);
+                                Swal.fire({
+                                    title: "Successfully Added",
+                                    text: "Your Product is successfully added",
+                                    icon: "success"
+                                });
 
-                        })
-                        .catch(error => {
-                            console.log(error);
-                        })
+                            })
+                            .catch(error => {
+                                console.log(error);
+                                Swal.fire({
+                                    title: "Unsuccessfully Added",
+                                    text: "Your Product is unsuccessfully to added",
+                                    icon: "error"
+                                });
+                            })
+                    }
 
 
                 })
@@ -72,8 +79,8 @@ const AddItems = () => {
 
     return (
         <section className="my-10">
-            <h1 className='text-4xl font-bold text-center text-white mb-10'>Add Your Watches</h1>
-            <motion.div initial={{y:"-500%", opacity:0}} animate={{y:0, opacity:1}} transition={{duration:1.5, ease:"backOut"}} id="sectionDiv" className="bg-gray-950 rounded-2xl flex items-center p-5 justify-center w-fit mx-auto">
+            <h1 className='text-4xl font-bold text-center text-[#515839] mb-10'>Add Your <span className="text-[#FC6F2F]">Watches</span></h1>
+            <motion.div initial={{ y: "-500%", opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1.5, ease: "backOut" }} id="sectionDiv" className="bg-gray-950 rounded-2xl flex items-center p-5 justify-center w-fit mx-auto">
                 <form onSubmit={handleAddWatch} action="" className="text-white space-y-3">
                     <div className="flex flex-wrap gap-10">
                         <div className='space-y-1'>
