@@ -9,7 +9,7 @@ const CardInfo = () => {
     // const [split, setsplit] = useState();
     const [details, setdetails] = useState();
     const split = id?.id.split('=')
-    // console.log(split);
+    console.log(split);
     const axiosLink = useAxios()
     useEffect(() => {
         axiosLink.get(`/watches/${split[1]}`)
