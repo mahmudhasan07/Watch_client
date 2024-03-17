@@ -1,12 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import useAxios, { AxiosSecure } from '../Axios/useAxios';
 
 const Trending = () => {
     const axiosLink = useAxios(AxiosSecure)
+    const [array, setarray] = useState([]);
     useEffect(() => {
         axiosLink.get("/trending")
         .then(res=>{
             console.log(res);
+            setarray(res?.data)
         })
         .catch(error=>{
             console.log(error);
@@ -20,8 +22,9 @@ const Trending = () => {
                 <h1 className=''>Highlight watches worn by celebrities or influences, as this can significantly influence purchasing decisions. Include images or quotes from celebrities to add credibility and appeal.</h1>
             </marquee>
             <div>
-
-
+                {
+                    array?.map((element, idx))
+                }
                 
             </div>
             
