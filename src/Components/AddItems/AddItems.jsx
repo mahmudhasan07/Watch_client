@@ -3,6 +3,7 @@ import './AddItems.css'
 import { useState } from "react";
 import axios from "axios";
 import useAxios, { AxiosSecure } from "../Axios/useAxios";
+import Swal from 'sweetalert2'
 // import axios from "axios";
 const AddItems = () => {
 
@@ -39,6 +40,12 @@ const AddItems = () => {
                     axiosLink.post("/products", data)
                         .then(res => {
                             console.log(res);
+                            Swal.fire({
+                                title: "Successfully Added",
+                                text: "Your Product is successfully added",
+                                icon: "success"
+                              });
+
                         })
                         .catch(error => {
                             console.log(error);
