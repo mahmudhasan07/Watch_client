@@ -18,7 +18,7 @@ const WhyUs = () => {
             data-aos-easing="ease-in-out"
             className=' lg:my-16 md:my-10 my-6'>
             <h1 className='text-5xl font-bold text-center mb-10 text-[#515839]'>Our <span className='text-[#FC6F2F]'>Services</span></h1>
-            <div className='flex flex-wrap mt-16  justify-around'>
+            <div className='flex flex-wrap mt-16 gap-10  justify-around'>
                 <div
                     data-aos="fade-left"
                     data-aos-offset="600"
@@ -34,7 +34,7 @@ const WhyUs = () => {
                     data-aos-offset="600"
                     data-aos-duration="1100"
                     data-aos-easing="ease-in-out"
-                    className='text-3xl space-y-5 bg-black text-[#515839] font-semibold'>
+                    className='text-3xl space-y-5 z-50 bg-black text-[#515839] font-semibold'>
                     <div className='flex gap-5'>
                         <MdOutlineSecurity className='text-6xl text-[#FC6F2F]'></MdOutlineSecurity>
                         <h1>SAFE AND <br /> SECURE CHECKOUT</h1>
