@@ -28,9 +28,9 @@ const Banner = () => {
             </div>
             <div className="absolute overflow-hidden left-16 top-1/4">
 
-                <motion.div variants={divNo1} initial="initial" animate="animate" transition={{delay:5.5, duration:2.5, ease:"backOut"}} className="mt-8 text-gray-200  space-y-2">
-                    <h1 className="text-5xl font-extrabold">Discover our watch boutique, <br />designed for excellence.  <br />Take a deep dive into our collection.</h1>
-                    <h1 className="text-3xl font-bold">Explore Our Stylish Timepieces</h1>
+                <motion.div variants={divNo1} initial="initial" animate="animate" transition={{delay:5.5, duration:2.5, ease:"backOut"}} className="lg:mt-8 text-gray-200  space-y-2">
+                    <h1 className="lg:text-5xl text-3xl font-extrabold">Discover our watch boutique, <br />designed for excellence.  <br />Take a deep dive into our collection.</h1>
+                    <h1 className="lg:text-3xl text-2xl font-bold">Explore Our Stylish Timepieces</h1>
                     {/* <h1 className="text-3xl font-bold">Discover Our Premier Watches</h1> */}
                     <button id="btn" className="">Shop Now</button>
                 </motion.div>
