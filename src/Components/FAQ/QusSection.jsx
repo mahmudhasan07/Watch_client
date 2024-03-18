@@ -27,8 +27,8 @@ const QusSection = () => {
                         data-aos-offset="500"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out"
-                        className=" w-1/3">
-                        <img id="FAQimg" src="https://i.ibb.co/BPY2MQs/FAQ1.jpg" className="w-[400px] object-cover aspect-square rounded-xl border-8" alt="" />
+                        className=" lg:w-1/3 ">
+                        <img id="FAQimg" src="https://i.ibb.co/BPY2MQs/FAQ1.jpg" className=" w-96 object-cover aspect-square rounded-xl border-8" alt="" />
                         <img src="https://i.ibb.co/866fRLR/FAQ2.jpg" className="w-40 aspect-square object-cover border-4 border-white rounded-xl absolute top-[70%] left-80" alt="" />
                     </div>
                     <div
@@ -36,7 +36,7 @@ const QusSection = () => {
                         data-aos-offset="500"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out"
-                        className="space-y-2 relative my-auto w-1/3">
+                        className="space-y-2 relative my-auto lg:w-1/3">
                         <details className="collapse border-2  text-white bg-[#515839]">
                             <summary className="collapse-title text-xl font-medium">Why you purchase product from our shop??</summary>
                             <div className="collapse-content bg-[#FC6F2F]">
