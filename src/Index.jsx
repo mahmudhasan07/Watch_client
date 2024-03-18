@@ -8,10 +8,13 @@ import image3 from "../public/watch3.png";
 import image4 from "../public/watch4.png";
 import image5 from "../public/watch_banner.png";
 import App from "./App";
+import "./App.css"
 
 
 const Index = () => {
+    const [size, setsize]  = useState()
     const [loading, setLoading] = useState(true)
+    console.log(window.matchMedia(1400));
     // const [loading, setLoading] = useState(false)
     return (
         <section className="">
@@ -23,7 +26,7 @@ const Index = () => {
                                 <motion.div id="Homepage" className="absolute w-full p-2 h-screen border-2">
                                     <motion.img
                                         initial={{ width: "30%", y: "400%", opacity: 0 }}
-                                        animate={{ width: "30%", y: 0, height: "50%", x: "50%", opacity: 1 }}
+                                        animate={{ width: "30%", y: 0, height: "350px", x: "50%", opacity: 1 }}
                                         transition={{ delay: 1, duration: 2, ease: "backOut" }} exit={{ opacity: 0 }} key={loading} src={image1} className="absolute object-cover" ></motion.img>
                                     <motion.img
                                         initial={{ width: "30%", y: "400%", opacity: 0 }}
@@ -35,12 +38,12 @@ const Index = () => {
                                         transition={{ delay: 1.5, duration: 2, ease: "backOut" }} exit={{ opacity: 0 }} key={loading} src={image3} className="absolute object-cover" ></motion.img>
                                     <motion.img
                                         initial={{ width: "30%", y: "400%", opacity: 0 }}
-                                        animate={{ width: "30%", y: "90%", height: "50%", x: "200%", opacity: 1 }}
+                                        animate={{ width: "30%", y: "90%", height: "350px", x: "200%", opacity: 1 }}
                                         transition={{ delay: 2.5, duration: 2, ease: "backOut" }} exit={{ opacity: 0 }} key={loading} src={image4} className="absolute object-cover" ></motion.img>
                                     <motion.img
                                         initial={{ width: "35%", y: "400%", opacity: 0 }}
                                         animate={{ width: "35%", y: "60%", x: "100%", opacity: 1 }}
-                                        transition={{ delay: 3, duration: 3, ease: "backOut" }} exit={{ opacity: 1, transition: { delay: .1 } }} key={loading} onAnimationComplete={() => setLoading(false)} src={image5} className="absolute object-cover" ></motion.img>
+                                        transition={{ delay: 3, duration: 3, ease: "backOut" }} exit={{ opacity: 1, transition: { delay: .1 } }} key={loading} onAnimationComplete={() => setLoading(true)} src={image5} className="absolute object-cover" ></motion.img>
                                 </motion.div>
                             </AnimatePresence>
                             :
