@@ -34,7 +34,7 @@ const WhyUs = () => {
                     data-aos-offset="600"
                     data-aos-duration="1100"
                     data-aos-easing="ease-in-out"
-                    className='text-3xl space-y-5 z-50 bg-black text-[#515839] font-semibold'>
+                    className='lg:text-3xl md:text-2xl text-xl space-y-5 z-50 bg-black text-[#515839] font-semibold'>
                     <div className='flex gap-5'>
                         <MdOutlineSecurity className='text-6xl text-[#FC6F2F]'></MdOutlineSecurity>
                         <h1>SAFE AND <br /> SECURE CHECKOUT</h1>
