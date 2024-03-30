@@ -23,7 +23,7 @@ const Index = () => {
                     {
                         loading == true ?
                             <AnimatePresence>
-                                <motion.div id="Homepage" className="absolute w-full p-2 h-screen border-2 border-black">
+                                <motion.div id="Homepage" className="absolute w-full p-2 h-screen">
                                     <motion.img
                                         initial={{ width: "30%", y: "400%", opacity: 0 }}
                                         animate={{ width: "30%", y: 0, height: "350px", x: "50%", opacity: 1 }}
