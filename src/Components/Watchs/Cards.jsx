@@ -76,7 +76,7 @@ const Cards = () => {
                     <option value="desc">High to Low</option>
                 </select>
             </div>
-            <div className='flex flex-wrap justify-center gap-10 my-10'>
+            <div className='flex flex-wrap justify-center gap-16 my-10'>
                 {
                     loading == true ?
                         <p className='h-screen text-5xl my-auto'>loading</p>
