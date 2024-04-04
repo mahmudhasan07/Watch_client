@@ -14,9 +14,9 @@ const Card = ({ card, id }) => {
     // const newarray = note.split(".")
     // console.log(newarray);
 
-    useEffect(() => {
-        AOS.init()
-    }, [])
+    // useEffect(() => {
+    //     AOS.init()
+    // }, [])
     return (
         <div
             data-aos="fade-right"

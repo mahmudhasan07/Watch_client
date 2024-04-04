@@ -50,7 +50,7 @@ const Index = () => {
                             <AnimatePresence>
                                 {
                                     !loading ?
-                                        <motion.div initial={{ opacity: 0 }} key={!loading} animate={{ opacity: 1, }} transition={{ delay: 4}} className="bg-black">
+                                        <motion.div initial={{ opacity: 0 }} key={!loading} animate={{ opacity: 1, }} transition={{ delay: 4.4}} className="bg-black">
                                             <App></App>
                                         </motion.div>
                                         :

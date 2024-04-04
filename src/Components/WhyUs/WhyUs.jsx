@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MdOutlineSecurity } from "react-icons/md";
 import { MdAssignmentReturn } from "react-icons/md";
 import { MdWorkspacePremium } from "react-icons/md";
 import { FaShippingFast } from "react-icons/fa";
-
-
-
-
 import "./why.css"
+import AOS from "aos"
+import 'aos/dist/aos.css';
+
 
 const WhyUs = () => {
+    useEffect(() => {
+        AOS.init()
+    }, [])
     return (
         <section
             data-aos="fade-up"
