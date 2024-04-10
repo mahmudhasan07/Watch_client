@@ -68,6 +68,7 @@ const AddItems = () => {
 
     }
 
+
     const handleimage = (e) => {
         const img = e.target.files[0]
         console.log(img);

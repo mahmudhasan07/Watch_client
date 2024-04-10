@@ -19,22 +19,15 @@ const Card = ({ card, id }) => {
 
     // useEffect(() => {
     //     AOS.init()
-    // }, [])
-
-    useEffect(() => {
-        if (inView) {
-            control.start("visible")
-        }
-    }, [control, inView]);
-
+    // }, 
     const squareVariants = {
         visible: { x: 0, opacity: 1 },
         hidden: { x: -((id + 1) * 300), opacity: 0 }
     }
     return (
 
-        <motion.div ref={ref} variants={squareVariants} initial={"hidden"} animate={control} transition={{ duration: 2 }}
-            id='card' className={`card w-96 h-96 text-white space-y-2 rounded-xl`}>
+        <motion.div variants={squareVariants} initial={"hidden"} animate={"visible"} transition={{ duration: 2 }}
+            id='card' className={`card w-80 h-80 text-white space-y-2 rounded-xl`}>
             <img src={card?.Watch_image} id='card-img' className='h-full w-full object-cover rounded-lg' alt="" />
             <div id='cardinfo' className=' pt-5 text-center'>
                 <h1 className='text-xl p-1 font-semibold'>Model: {card?.Watch_name}</h1>

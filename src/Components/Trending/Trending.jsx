@@ -8,7 +8,7 @@ const Trending = () => {
     useEffect(() => {
         axiosLink.get("/trending")
             .then(res => {
-                console.log(res);
+                // console.log(res);
                 setarray(res?.data)
             })
             .catch(error => {

@@ -14,7 +14,7 @@ import "./App.css"
 const Index = () => {
     const [size, setsize]  = useState()
     const [loading, setLoading] = useState(true)
-    console.log(window.matchMedia(1400));
+    // console.log(window.matchMedia(1400));
     // const [loading, setLoading] = useState(false)
     return (
         <section className="">

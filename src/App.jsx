@@ -8,6 +8,16 @@ import Footer from './Components/Footer/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [bannerTime, setbannerTime] = useState(4.4);
+  const location = useLocation()
+  useEffect(() => {
+    if (location.pathname == "/") {
+      setbannerTime(4.4)
+    }
+    else {
+      setbannerTime(1.2)
+    }
+  }, [location]);
 
 
 

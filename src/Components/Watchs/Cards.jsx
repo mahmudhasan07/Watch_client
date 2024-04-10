@@ -64,7 +64,7 @@ const Cards = () => {
     return (
         <section>
 
-            <h1 className='text-4xl font-extrabold text-center text-[#515839]'>Watches <span className='text-[#FC6F2F]'>Collection</span> </h1>
+            <h1 className='text-5xl font-extrabold text-center my-7 text-[#515839]'>Watches <span className='text-[#FC6F2F]'>Collection</span> </h1>
             <div className='flex justify-center gap-3'>
                 <input ref={search} type="text" className='lg:w-96 md:w-80 w-72 border-2 bg-black text-white p-2 rounded-2xl' />
                 <button onClick={handlesearch} className='btn border-none hover:bg-[#FC6F2F] bg-[#515839] text-white'>Search</button>
