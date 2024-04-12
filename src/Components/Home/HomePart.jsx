@@ -9,10 +9,11 @@ import WhyUs from "../WhyUs/WhyUs";
 
 
 const HomePart = () => {
+    
     return (
         <section>
             <div>
-                <Banner></Banner>
+                <Banner ></Banner>
             </div>
             <div>
                 <Trending></Trending>

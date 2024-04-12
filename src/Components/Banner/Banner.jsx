@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 // import { Parallax } from "react-scroll-parallax";
 const Banner = () => {
-
+    const [bannerTime, setbannerTime] = useState(0);
     const divNo1 = {
         initial: {
             x: "-150%"
@@ -17,13 +17,12 @@ const Banner = () => {
             x: "0"
         }
     }
+    if (bannerTime == 4.4) {
+        setbannerTime(1.2)
 
-    
-
-    
-    console.log(location);
-
-    
+    } else {
+        setbannerTime(4.4)
+    }
 
 
 
