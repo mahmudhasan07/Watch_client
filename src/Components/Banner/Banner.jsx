@@ -17,12 +17,6 @@ const Banner = () => {
             x: "0"
         }
     }
-    if (bannerTime == 4.4) {
-        setbannerTime(1.2)
-
-    } else {
-        setbannerTime(4.4)
-    }
 
 
 
