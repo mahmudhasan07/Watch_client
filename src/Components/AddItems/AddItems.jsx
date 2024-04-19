@@ -107,6 +107,16 @@ const AddItems = () => {
                             </select>
                         </div>
                     </div>
+                    <div className="flex flex-wrap gap-10">
+                        <div>
+                            <label className="text-lg font-semibold">Type of Watches</label> <br />
+                            <input type="text" className="w-80 bg-black rounded-2xl p-1" />
+                        </div>
+                        <div>
+                            <label className="text-lg font-semibold">Watch Color</label> <br />
+                            <input type="text" className="w-80 bg-black rounded-2xl p-1" />
+                        </div>
+                    </div>
                     <div className=" flex flex-wrap gap-10">
                         <div className="">
                             <label htmlFor="" className='text-lg font-semibold'>Watch Description</label> <br />
@@ -116,6 +126,7 @@ const AddItems = () => {
                             <img src={previewimage} alt="" className="w-20" />
                         </div>
                     </div>
+                    
                     <div className="">
                         <label htmlFor="" className='text-lg font-semibold'>Watch Description</label>
                         <div className="p-2">

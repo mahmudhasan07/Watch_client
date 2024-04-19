@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 // import { Parallax } from "react-scroll-parallax";
 const Banner = () => {
-    const [bannerTime, setbannerTime] = useState(0);
+    // const [bannerTime, setbannerTime] = useState(0);
     const divNo1 = {
         initial: {
             x: "-150%"
@@ -23,7 +23,7 @@ const Banner = () => {
     return (
         <section className="relative my-2">
             <div className="h-[600px] flex justify-center items-center">
-                <motion.img src={banner} initial={{ width: "35%" }} animate={{ width: "100%", height: "100%", filter: { brightness: "80%" } }} transition={{ delay: bannerTime, duration: 2, ease: "anticipate" }} className="object-cover opacity-95 object-center"></motion.img>
+                <motion.img src={banner} initial={{ width: "35%" }} animate={{ width: "100%", height: "100%", filter: { brightness: "80%" } }} transition={{ delay: 1, duration: 2, ease: "anticipate" }} className="object-cover opacity-95 object-center"></motion.img>
             </div>
             <div className="absolute overflow-hidden lg:left-16 md:left-10 left-3 top-1/4">
                 <NavLink></NavLink>
