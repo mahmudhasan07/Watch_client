@@ -21,6 +21,8 @@ const AddItems = () => {
         const gender = from.gender.value
         const image = from.upload.files[0]
         const note = from.note.value
+        const type = from.type.value
+        const color = from.color.value
         // const data = { name, brand, price, gender, img, note }
         // console.log(upload);
 
@@ -35,26 +37,29 @@ const AddItems = () => {
                     console.log(res.data.data.display_url);
                     const imgURL = res?.data?.data?.display_url
 
-                    const data = { name, brand, price, gender, imgURL, note }
+                    const data = { name, brand, price, gender, imgURL, note,type, color }
                     if (imgURL) {
 
                         axiosLink.post("/products", data)
                             .then(res => {
                                 console.log(res);
-                                Swal.fire({
-                                    title: "Successfully Added",
-                                    text: "Your Product is successfully added",
-                                    icon: "success"
-                                });
+                                if(res.data == "successful"){
 
-                            })
-                            .catch(error => {
-                                console.log(error);
-                                Swal.fire({
-                                    title: "Unsuccessfully Added",
-                                    text: "Your Product is unsuccessfully to added",
-                                    icon: "error"
-                                });
+                                    Swal.fire({
+                                        title: "Successfully Added",
+                                        text: "Your Product is successfully added",
+                                        icon: "success"
+                                    });
+                                }
+                                else{
+                                    Swal.fire({
+                                        title: "Unsuccessfully Added",
+                                        text: "Your Product is unsuccessfully to added",
+                                        icon: "error"
+                                    });
+
+                                }
+
                             })
                     }
 
@@ -110,11 +115,11 @@ const AddItems = () => {
                     <div className="flex flex-wrap gap-10">
                         <div>
                             <label className="text-lg font-semibold">Type of Watches</label> <br />
-                            <input type="text" className="w-80 bg-black rounded-2xl p-1" />
+                            <input type="text" name="type" className="w-80 bg-black rounded-2xl p-1" />
                         </div>
                         <div>
                             <label className="text-lg font-semibold">Watch Color</label> <br />
-                            <input type="text" className="w-80 bg-black rounded-2xl p-1" />
+                            <input type="text" name="color" className="w-80 bg-black rounded-2xl p-1" />
                         </div>
                     </div>
                     <div className=" flex flex-wrap gap-10">
