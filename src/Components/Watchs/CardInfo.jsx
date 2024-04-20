@@ -29,12 +29,12 @@ const CardInfo = () => {
     return (
         <section className='my-10'>
             <h1 className='text-4xl font-bold text-center text-[#515839]'>Product <span className='text-[#FC6F2F]'>Information</span></h1>
-            <div className='flex justify-around overflow-hidden lg:now flex-wrap lg:my-14 md:my-9 my-6'>
+            <div className='grid lg:grid-cols-2 grid-cols-1 lg:my-14 md:my-9 my-6'>
                 <motion.div initial={{x:"-200%", opacity:0}} animate={{x:0, opacity:1}} transition={{delay:1, duration:1.5, ease:"backOut"}}>
-                    <img src={array?.Watch_image} className='w-80 rounded-2xl' alt="" />
+                    <img src={array?.Watch_image} className='w-80 rounded-2xl mx-auto' alt="" />
                 </motion.div>
                 <motion.div initial={{x:"200%", opacity:0}} animate={{x:0, opacity:1}} transition={{delay:1, duration:1.5, ease:"backOut"}} 
-                className='text-xl text-white font-semibold my-auto'>
+                className='text-xl text-white font-semibold my-auto mr-2'>
                     <h1 className='text-[#FC6F2F]'>Name : <span className='text-[#515839]'> {array?.Watch_name}</span></h1>
                     <h1 className='text-[#FC6F2F]'>Brand : <span className='text-[#515839]'> {array?.Watch_brand}</span></h1>
                     <h1 className='text-[#FC6F2F]'>Gender :  <span className='text-[#515839]'> {array?.Watch_gender}</span></h1>
