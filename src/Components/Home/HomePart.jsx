@@ -1,5 +1,6 @@
 import Banner from "../Banner/Banner";
 import QusSection from "../FAQ/QusSection";
+import FamousCollection from "../FamousCollection/FamousCollection";
 import Review from "../Review/Review";
 import Parallax from "../Slider/Parallax";
 import Slider from "../Slider/Slider";
@@ -20,6 +21,9 @@ const HomePart = () => {
             </div>
             <div>
                 <WhyUs></WhyUs>
+            </div>
+            <div>
+                <FamousCollection></FamousCollection>
             </div>
             <div>
                 <QusSection ></QusSection>
