@@ -1,4 +1,4 @@
-#collectionID{
+#collectionID {
     display: none;
     position: relative;
     transition: all 1s;
@@ -7,13 +7,20 @@
 /* #famousimage:hover > #collectionID{
     display: flex;
 } */
-#collection{
+#collection {
     transition: all 1s;
 }
-#collection:hover > div {
-display: flex;
-position: absolute;
-transition: all 2s;
+
+#collection:hover>#collectionID {
+    display: flex;
+    position: absolute;
+    transition: all 2s;
+    backdrop-filter: blur(16px);
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    color: white;
 }
-
-
