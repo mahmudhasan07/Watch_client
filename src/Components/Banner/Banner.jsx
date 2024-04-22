@@ -5,6 +5,7 @@ import banner from "../../../public/WatchCollectors.jpeg";
 // import { NavLink, } from "react-router-dom";
 import { NavLink, useLocation } from 'react-router-dom';
 import { useEffect, useState } from "react";
+import AOS from "aos"
 
 // import { Parallax } from "react-scroll-parallax";
 const Banner = () => {
@@ -19,11 +20,23 @@ const Banner = () => {
     }
 
 
+    useEffect(()=>{
+        AOS.init()
+    },[])
+
+
 
     return (
         <section className="relative my-2">
-            <div className="h-[600px] flex justify-center items-center">
-                <motion.img src={banner} initial={{ width: "35%" }} animate={{ width: "100%", height: "100%", filter: { brightness: "80%" } }} transition={{ delay: 1, duration: 2, ease: "anticipate" }} className="object-cover opacity-95 object-center"></motion.img>
+            <div  
+            data-aos="zoom-in"
+            data-aos-delay="1000"
+            data-aos-easing="ease-in-out-back"
+            data-aos-duration="1500"
+            // data-aos-anchor-placement="center-center"
+            className=" flex justify-center items-center">
+                {/* <motion.img src={banner} initial={{ width: "35%" }} animate={{ width: "100%", height: "100%", filter: { brightness: "80%" } }} transition={{ delay: 1, duration: 2, ease: "anticipate" }} className="object-cover opacity-95 object-center"></motion.img> */}
+                <img src={banner} className="h-[600px] object-cover object-center w-full"></img>
             </div>
             <div className="absolute overflow-hidden lg:left-16 md:left-10 left-3 top-1/4">
                 <NavLink></NavLink>
