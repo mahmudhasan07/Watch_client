@@ -29,6 +29,8 @@ const NavBar = () => {
                 <div>
                     <img src={logo} className='w-40 h-24' alt="" />
                     <p>Hello</p>
+                    <p>Hello</p>
+                    <p>Hello</p>
                 </div>
                 <div className='my-auto p-2 '>
                     <ul className='text-[#515839]  text-xl font-extrabold flex flex-wrap justify-center lg:gap-10 md:gap-7 gap-5'>
