@@ -86,7 +86,7 @@ const Cards = () => {
                             :
                             <h1 className='text-4xl font-bold my-10'>No Result Found</h1>
 
-                }
+                } 
             </div>
         </section>
     );
