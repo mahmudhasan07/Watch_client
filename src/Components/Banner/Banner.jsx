@@ -27,7 +27,7 @@ const Banner = () => {
 
 
     return (
-        <section className="relative my-2">
+        <section className="relative my-2 overflow-hidden">
             <div  
             data-aos="zoom-in"
             data-aos-delay="1000"
