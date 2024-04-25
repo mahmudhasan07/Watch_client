@@ -17,7 +17,7 @@ const FamousCollection = () => {
             data-aos-offset="500"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            className="lg:my-10 md:my-7 my-5 bg-black py-1">
+            className="lg:my-16 md:my-10 my-6">
             <h1 className="text-4xl font-extrabold my-10 text-center text-[#515839]">Best Collects For <span className="text-[#FC6F2F]">Men & Women</span></h1>
             <div className="flex flex-wrap justify-center lg:gap-24 gap-10 my-5 ">
                 <div
