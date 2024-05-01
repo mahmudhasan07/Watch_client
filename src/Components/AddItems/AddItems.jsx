@@ -85,7 +85,7 @@ const AddItems = () => {
 
     return (
         <section className="my-10">
-            <h1 className='text-4xl font-bold text-center text-[#515839] mb-10'>Add Your <span className="text-[#FC6F2F]">Watches</span></h1>
+            <h1 className='text-4xl permanent-marker-regular font-bold text-center text-[#515839] mb-10'>Add Your <span className="text-[#FC6F2F]">Watches</span></h1>
             <motion.div initial={{ y: "-500%", opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1.5, ease: "backOut" }} id="sectionDiv" className="bg-gray-950 rounded-2xl flex items-center p-5 justify-center w-fit mx-auto">
                 <form onSubmit={handleAddWatch} action="" className="text-white space-y-3">
                     <div className="flex flex-wrap gap-10">

@@ -42,7 +42,7 @@ const Review = () => {
     }, []);
     return (
         <section className='mt-8 relative lg:w-10/12 md:w-11/12 w-11/12 rounded-2xl mx-auto py-10  font-semibold  text-[#FC6F2F] bg-[#515839]'>
-            <div className='flex justify-around top-0 lg:py-6 md:py-7 py-5 lg:text-4xl md:text-2xl text-lg bg-[#515839] rounded-2xl absolute w-full'>
+            <div className='italic flex justify-around top-0 lg:py-6 md:py-7 py-5 lg:text-4xl md:text-2xl text-lg bg-[#515839] rounded-2xl absolute w-full'>
             <div className=' text-center'>
                 <h1>{visit}<span>+</span></h1>
                 <h1>Customer Visited</h1>

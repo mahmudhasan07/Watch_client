@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useAxios, { AxiosSecure } from '../Axios/useAxios';
 import Card from '../Watchs/Card';
 import AOS from 'aos'
+import  "./trending.css";
 
 const Trending = () => {
     const axiosLink = useAxios(AxiosSecure)
@@ -26,7 +27,7 @@ const Trending = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             className='lg:my-16 md:my-10 my-6'>
-            <h1 className='text-4xl text-center my-5 font-extrabold text-[#515839]'>Trending <span className='text-[#FC6F2F]'>Watches</span></h1>
+            <h1 className='permanent-marker-regular text-4xl text-center my-5 font-extrabold text-[#515839]'>Trending <span className='text-[#FC6F2F]'>Watches</span></h1>
 
             <marquee
                 // data-aos="fade-up"

@@ -30,7 +30,7 @@ const Banner = () => {
         <section className="relative my-2 overflow-hidden">
             <div  
             data-aos="zoom-in"
-            data-aos-delay="1000"
+            data-aos-delay="200"
             data-aos-easing="ease-in-out-back"
             data-aos-duration="1500"
             // data-aos-anchor-placement="center-center"
@@ -39,8 +39,7 @@ const Banner = () => {
                 <img src={banner} className="h-[600px] object-cover object-center w-full"></img>
             </div>
             <div className="absolute overflow-hidden lg:left-16 md:left-10 left-3 top-1/4">
-                <NavLink></NavLink>
-                <motion.div variants={divNo1} initial="initial" animate="animate" transition={{ delay: 5.2, duration: 2.5, ease: "backOut" }} className="lg:mt-8 text-gray-200  space-y-2">
+                <motion.div variants={divNo1} initial="initial" animate="animate" transition={{ delay: 4.8, duration: 2.5, ease: "backOut" }} className="lg:mt-8 text-gray-200  space-y-2">
                     <h1 className="lg:text-5xl md:text-4xl text-3xl font-extrabold">Discover our watch boutique, <br />designed for excellence.  <br />Take a deep dive into our collection.</h1>
                     <h1 className="lg:text-3xl md:text-2xl text-xl font-bold">Explore Our Stylish Timepieces</h1>
                     {/* <h1 className="text-3xl font-bold">Discover Our Premier Watches</h1> */}

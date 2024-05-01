@@ -18,8 +18,8 @@ const WhyUs = () => {
             data-aos-offset="500"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            className=' lg:my-16 md:my-10 my-6'>
-            <h1 className='text-5xl font-bold text-center mb-10 text-[#515839]'>Our <span className='text-[#FC6F2F]'>Services</span></h1>
+            className='lg:my-16 md:my-10 my-6'>
+            <h1 className='text-5xl permanent-marker-regular font-bold text-center mb-10 text-[#515839]'>Our <span className='text-[#FC6F2F]'>Services</span></h1>
             <div className='flex flex-wrap mt-10 gap-10  justify-around'>
                 <div
                     data-aos="fade-left"

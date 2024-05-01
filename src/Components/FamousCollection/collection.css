@@ -24,3 +24,10 @@
     top: 0px;
     color: white;
 }
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-size: 50px;
+  font-style: normal;
+}
