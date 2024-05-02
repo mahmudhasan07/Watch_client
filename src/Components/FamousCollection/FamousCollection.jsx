@@ -20,7 +20,7 @@ const FamousCollection = () => {
             data-aos-easing="ease-in-out"
             className="lg:my-16 md:my-10 my-6 bg-black">
             <h1 className="permanent-marker-regular  my-10 text-center text-[#515839]">Best Collects For <span className="text-[#FC6F2F]">Men & Women</span></h1>
-            <div className="flex flex-wrap justify-center lg:gap-24 gap-10 my-5 ">
+            <div className="flex flex-wrap justify-center overflow-hidden lg:gap-24 gap-10 my-5 ">
                 <div
                     data-aos="fade-right"
                     data-aos-offset="500"

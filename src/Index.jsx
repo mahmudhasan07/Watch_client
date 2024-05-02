@@ -67,7 +67,7 @@ const Index = () => {
                 setwidth5Value("50%")
             }
         }
-        if (window.matchMedia("screen and (max-width:420px)").matches) {
+        if (window.matchMedia("screen and (max-width:430px)").matches) {
             // console.log("small screen");
             // image1
             setx1Value("5%")
